@@ -58,7 +58,19 @@ body{
   width: fit-content;
   max-width: 80%;
 }
-
+form{
+    display: flex;
+    align-items: center;
+}
+.ubtn{
+    display: inline-block;
+    height: 40px;
+    width: 45px;
+    border-radius: 50%;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/020/936/967/non_2x/upload-file-icon-for-your-website-design-logo-app-ui-free-vector.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
 
 .online{
@@ -83,4 +95,11 @@ body{
     color: white;
     border-radius: 5px;
     margin: 5px;
+}
+
+
+#uploadBtn {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 8px;
 }
