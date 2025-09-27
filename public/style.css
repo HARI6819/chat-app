@@ -17,8 +17,9 @@ body{
   height: 40px;
   border-radius: 40px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 16px;
   border: 1px solid rgba(0, 0, 0, 0.432);
+  outline: none;
 }
 #btn {
   height: 40px;
@@ -33,13 +34,19 @@ body{
   background-position: center;
   background-size: cover;
   padding: 10px;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   height: 500px;
-  width: 100%;
+  width: 350px;
   border: 1px solid rgba(0, 0, 0, 0.4);
+  border-top: transparent;
   overflow-y: auto;
+  overflow-x: hidden;
   position: relative;
-  padding-top: 50px;
+  
+}
+#chatbox::-webkit-scrollbar {
+  display: none;        
 }
 .chat {
   display: block;
@@ -57,12 +64,16 @@ body{
 .online{
     height: 41px;
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: rgb(134, 66, 66);
-    border-bottom: 1px solid black;
-    position: absolute;
-    top: 0;
-    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    position: sticky;
     overflow: auto;
+}
+
+.online::-webkit-scrollbar {
+  display: none;        
 }
 .onlineme{
     display: inline-block;
